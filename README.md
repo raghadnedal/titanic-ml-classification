@@ -1,66 +1,73 @@
-# Titanic EDA Project
+# Titanic ML Classification Project
 
-This project is an Exploratory Data Analysis (EDA) on the Titanic dataset using Python.
+This project is a Machine Learning classification project using the Titanic dataset.
 
-## Project Goal
+The goal is to predict whether a passenger survived or not based on features such as passenger class, sex, age, fare, and other available information.
 
-The goal of this project is to understand the Titanic dataset and analyze the factors that affected passenger survival.
+## Project Overview
 
-## Questions
+In this project, I used a cleaned Titanic dataset and built several classification models to predict passenger survival.
 
-This project answers the following questions:
+## Project Steps
 
-- How many passengers survived?
-- What is the difference between male and female survival?
-- Did passenger class affect survival?
-- Did age affect survival?
-- How many missing values are in the dataset?
-- What is the distribution of Fare?
+1. Load the cleaned dataset
+2. Define features and target
+3. Split the data into training and testing sets
+4. Apply feature scaling
+5. Train different classification models
+6. Evaluate model performance
+7. Compare model accuracy
+8. Select the best model
 
-## Libraries Used
+## Models Used
 
-- NumPy
+- Logistic Regression
+- K-Nearest Neighbors
+- Decision Tree
+- Random Forest
+
+## Evaluation Metrics
+
+The models were evaluated using:
+
+- Accuracy
+- Confusion Matrix
+- Classification Report
+- Precision
+- Recall
+- F1-score
+
+## Results
+
+The models were compared based on accuracy score.
+
+The best model was selected after comparing the performance of all trained models.
+
+## Tools and Libraries
+
+- Python
 - Pandas
+- NumPy
 - Matplotlib
+- Scikit-learn
+- Jupyter Notebook
+- Git
+- GitHub
 
-## Dataset
+## Project Structure
 
-The dataset contains information about Titanic passengers, such as:
-
-- PassengerId
-- Survived
-- Pclass
-- Name
-- Sex
-- Age
-- SibSp
-- Parch
-- Ticket
-- Fare
-- Cabin
-- Embarked
-
-## Data Cleaning
-
-The dataset was cleaned by:
-
-- Checking missing values
-- Handling missing Age values
-- Handling missing Embarked values
-- Removing unnecessary columns
-- Creating new useful columns such as FamilySize and AgeGroup
-
-## Main Insights
-
-- Most passengers did not survive.
-- Female passengers had a much higher survival rate than male passengers.
-- First-class passengers had the highest survival rate.
-- Third-class passengers had the lowest survival rate.
-- Fare distribution is right-skewed.
-- Age and Cabin contain missing values.
-
-## Files
-
-- Titanic_EDA.ipynb
-- Titanic-Dataset.csv
+```text
+titanic-ml-classification/
+│
+├── data/
+│   └── titanic_cleaned.csv
+│
+├── notebooks/
+│   └── titanic_ml_classification.ipynb
+│
+├── images/
+│   └── model_comparison.png
+│
+├── README.md
+└── .gitignore
 - README.md
